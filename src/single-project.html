@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/dist/style.css" />
+</head>
+
+<body class="bg-[#1f1f1f] font-saira overflow-x-hidden text-zinc-300">
+  <div class="container mx-auto border-r border-zinc-600 background overflow-x-hidden">
+    <!-- HEADER SECTION -->
+    <header class="flex items-center py-4 md:py-0 justify-between px-4 md:px-8 lg:px-20 xl:px-40">
+      <!-- LOGO -->
+      <a href="index.html" class="w-12 h-12 flex items-center">
+        <img src="/images/logo.svg" alt="" />
+      </a>
+
+      <!-- MOBILE NAVIGATION -->
+      <nav class="flex justify-between items-center text-zinc-50 text-xl mx-2 py-4 md:hidden z-40">
+        <ul
+          class="navigation flex flex-col text-lg font-semibold fixed inset-0 left-1/4 bg-[#1a1a1a]/50 backdrop-blur-md px-12 py-36 gap-y-6 translate-x-full ease-in duration-200">
+          <li class="uppercase py-2 px-4 tracking-wider">
+            <a href=""><span class="font-bold tracking-tight text-zinc-50 mr-2">00</span>
+              About</a>
+          </li>
+
+          <li class="uppercase py-2 px-4 tracking-wider">
+            <a href="projects.html"><span class="font-bold tracking-tight text-zinc-50 mr-2">01</span>
+              protfolio</a>
+          </li>
+
+          <li class="uppercase py-2 px-4 tracking-wider">
+            <a href=""><span class="font-bold tracking-tight text-zinc-50 mr-2">02</span>
+              contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden md:block text-zinc-300">
+        <ul class="flex md:gap-x-10 text-lg font-semibold">
+          <li
+            class="uppercase py-2 pt-12 text-sm px-2 tracking-wider text-zinc-800 bg-zinc-200 rounded-b-sm ease-in-out duration-200">
+            <a href="index.html" class="p-2"><span
+                class="md:hidden font-bold tracking-tight text-zinc-200 mr-2">00</span>
+              home</a>
+          </li>
+
+          <li class="uppercase py-2 pt-12 text-sm px-4 tracking-wider hover:text-zinc-50 ease-in-out duration-200">
+            <a href="projects.html" class="p-2"><span
+                class="md:hidden font-bold tracking-tight text-zinc-200 mr-2">01</span>
+              protfolio</a>
+          </li>
+
+          <li class="uppercase py-2 pt-12 text-sm px-4 tracking-wider hover:text-zinc-50 ease-in-out duration-200">
+            <a href="" class="p-2"><span class="md:hidden font-bold tracking-tight text-zinc-200 mr-2">02</span>
+              contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MENU BUTTON -->
+      <button class="nav-toggle z-50 md:hidden outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 open-svg" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 close-svg hidden" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="mt-12 md:mt-20 lg:mt-28 xl:mt-20 px-4 md:px-8 lg:px-20 xl:px-40">
+      <div class="relative px-4 lg:px-8">
+        <div class="absolute">
+          <div class="relative">
+            <div class="flex">
+              <div class="w-24 h-8 border-l border-t border-zinc-700 mr-4 ml-4"></div>
+              <div class="-mt-3">
+                <span class="text-xs lg:text-sm text-zinc-400 uppercase font-semibold tracking-[0.3em]">project
+                  overview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 pt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 xl:gap-x-10 2xl:gap-x-14">
+            <div class="aspect-auto overflow-hidden" data-aos="fade-right" data-aos-duration="800">
+              <!-- Swiper -->
+              <div class="w-full h-full mySwiper relative">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/work1.png" alt="" class="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="mt-6 md:mt-0 px-1" data-aos="fade-left" data-aos-duration="800">
+              <div class="sm:mt-8 md:mt-0">
+                <h1
+                  class="uppercase text-2xl sm:text-4xl md:text-2xl xl:text-3xl 2xl:text-4xl tracking-widest font-bold">
+                  project name
+                </h1>
+
+                <p
+                  class="tracking-wide text-justify text-zinc-400 sm:text-lg md:text-sm xl:text-lg 2xl:text-xl mt-6 md:mt-2">
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal distribution of letters, as opposed to
+                  using 'Content here, content here', making it look like
+                  readable English.
+                </p>
+              </div>
+
+              <div class="mt-8 sm:mt-14 md:mt-6 xl:mt-8">
+                <h1 class="uppercase text-xl sm:text-2xl md:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-widest">
+                  what is done
+                </h1>
+                <div class="tracking-wide text-zinc-400 mt-6 md:mt-2 space-y-2">
+                  <div class="flex gap-x-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-sm sm:text-base md:text-sm xl:text-lg">Simple Ui design with Figma</span>
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-sm sm:text-base md:text-sm xl:text-lg">Front-end development in Vue js and
+                      Tailwind css</span>
+                  </div>
+                  <div class="flex gap-x-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-sm sm:text-base md:text-sm xl:text-lg">Back-end API development with laravel
+                      8</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-2 mt-8 sm:mt-14 md:mt-6 xl:mt-8 gap-2 md:gap-x-6 gap-y-8 md:gap-y-4 xl:gap-y-8">
+                <div>
+                  <h2
+                    class="tracking-widest text-xl sm:text-2xl md:text-lg xl:text-xl 2xl:text-2xl uppercase font-bold">
+                    Client Name
+                  </h2>
+                  <p class="text-zinc-400 mt-3 md:mt-1">
+                    Example Company LTD.
+                  </p>
+                </div>
+
+                <div class="">
+                  <h2
+                    class="tracking-widest text-xl sm:text-2xl md:text-lg xl:text-xl 2xl:text-2xl uppercase font-bold">
+                    Task
+                  </h2>
+                  <p class="text-zinc-400 mt-3 md:mt-1">
+                    Build complete website
+                  </p>
+                </div>
+
+                <div class="flex items-center">
+                  <h2 class="text-zinc-300 text-lg sm:text-xl tracking-widest uppercase">
+                    4 January, 2022
+                  </h2>
+                </div>
+                <div class="">
+                  <button
+                    class="uppercase border border-zinc-600 bg-[#1f1f1f] hover:bg-zinc-200 hover:text-zinc-800 px-8 py-2 sm:text-xl md:text-base ease-out duration-300">
+                    VISIT SITE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUGGESTION -->
+    <section class="mt-28 md:mt-32 xl:mt-36 px-4 md:px-8 lg:px-20 xl:px-40">
+      <div class="relative md:px-4 lg:px-8">
+        <div class="absolute">
+          <div class="relative">
+            <div class="flex">
+              <div class="w-24 h-8 border-l border-t border-zinc-700 mr-4 ml-4"></div>
+              <div class="-mt-3">
+                <span class="text-xs lg:text-sm text-zinc-400 uppercase font-semibold tracking-[0.3em]">other projects
+                  you may like</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 pt-12" data-aos="fade-up" data-aos-duration="700">
+          <div class="swiper suggestion">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+              <div class="swiper-slide aspect-video">
+                <img src="/images/work3.png" class="w-full h-full object-cover" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT AND CONTACT -->
+    <section class="mt-28 md:mt-32 xl:mt-36 pb-20 xl:pb-36 px-4 md:px-8 lg:px-20 xl:px-40">
+      <div class="relative md:px-4 lg:px-8">
+        <div class="absolute">
+          <div class="relative p-0">
+            <div class="flex">
+              <div class="w-24 h-8 border-l border-t border-zinc-700 mr-4 ml-4"></div>
+              <div class="-mt-3">
+                <span class="text-xs lg:text-sm text-zinc-400 uppercase font-semibold tracking-[0.3em]">visit
+                  & contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-y-16 px-4 pt-12">
+          <!-- PERSONAL INFO -->
+          <div class="uppercase" data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex flex-col gap-y-4 sm:text-lg md:text-base">
+              <div class="flex gap-x-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z"
+                    clip-rule="evenodd" />
+                </svg>
+                <p class="tracking-widest">
+                  dormotola, jashore sadar, jashore
+                </p>
+              </div>
+
+              <div class="flex gap-x-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd" />
+                </svg>
+                <p class="tracking-widest">+880-1992327887</p>
+              </div>
+
+              <div class="flex gap-x-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <p class="tracking-widest">shazzadulislam998@gmail.com</p>
+              </div>
+
+              <div class="flex gap-x-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                    clip-rule="evenodd" />
+                </svg>
+                <p class="tracking-widest">freshstart.com</p>
+              </div>
+            </div>
+            <div class="mt-8 md:mr-8 md:mt-8 lg:mr-20">
+              <iframe class="aspect-video w-full rounded-sm"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.160837321795!2d89.19167301537789!3d23.164329216827078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff10eb69da8347%3A0xbc557c37edd1256!2z4Kan4Kaw4KeN4Kau4Kak4Kay4Ka-!5e0!3m2!1sen!2sbd!4v1641283479727!5m2!1sen!2sbd"
+                style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM  -->
+          <div class="md:pl-6" data-aos="fade-left" data-aos-duration="1000">
+            <form action="#" class="flex flex-col gap-y-8 md:gap-y-12">
+              <!-- NAME -->
+              <div class="flex items-center border-b pb-2 gap-x-4 border-zinc-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <input type="text"
+                  class="appearance-none bg-transparent w-full focus:outline-none uppercase placeholder:text-[0.6rem] placeholder:tracking-widest sm:placeholder:text-sm"
+                  placeholder="TYPE YOUR NAME" />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="flex items-center border-b pb-2 gap-x-4 border-zinc-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <input type="email"
+                  class="appearance-none bg-transparent w-full focus:outline-none uppercase placeholder:text-[0.6rem] placeholder:tracking-widest sm:placeholder:text-sm"
+                  placeholder="TYPE YOUR EMAIL" />
+              </div>
+
+              <!-- SUBJECT -->
+              <div class="flex items-center border-b pb-2 gap-x-4 border-zinc-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+
+                <input type="text"
+                  class="appearance-none bg-transparent w-full focus:outline-none uppercase placeholder:text-[0.6rem] placeholder:tracking-widest sm:placeholder:text-sm"
+                  placeholder="TYPE YOUR SUBJECT (FOR ATTENTION)" />
+              </div>
+
+              <!-- MESSAGE -->
+              <div class="flex border-b pb-2 gap-x-4 border-zinc-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                    clip-rule="evenodd" />
+                </svg>
+                <textarea
+                  class="appearance-none bg-transparent w-full focus:outline-none uppercase placeholder:text-[0.6rem] placeholder:tracking-widest sm:placeholder:text-sm"
+                  placeholder="TYPE YOUR MESSAGE" rows="4"></textarea>
+              </div>
+
+              <!-- BUTTON  -->
+              <div class="mt-10">
+                <button class="border border-zinc-600 px-10 sm:px-14 py-2 uppercase text-sm sm:text-lg tracking-widest">
+                  send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="bg-[#1c1c1c]">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 py-12 sm:py-14 md:py-16 uppercase">
+        <div class="flex justify-center md:items-center text-zinc-50 gap-x-6">
+          <!-- facebook -->
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+              stroke="none">
+              <path
+                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+              </path>
+            </svg>
+          </a>
+          <!-- instagram -->
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+              stroke="none">
+              <path
+                d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+              </path>
+              <circle cx="11.994" cy="11.979" r="3.003"></circle>
+            </svg>
+          </a>
+          <!-- twitter -->
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+              stroke="none">
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+              </path>
+            </svg>
+          </a>
+          <!-- whats app -->
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+              stroke="none">
+              <path
+                d="M12.043 6.925a4.985 4.985 0 0 0-4.98 4.979c-.001.94.263 1.856.761 2.649l.118.188-.503 1.837 1.885-.494.181.108a4.97 4.97 0 0 0 2.535.693h.001a4.986 4.986 0 0 0 4.979-4.978 4.946 4.946 0 0 0-1.456-3.522 4.946 4.946 0 0 0-3.521-1.46zm2.928 7.118c-.125.35-.723.668-1.01.711a2.044 2.044 0 0 1-.943-.059 8.51 8.51 0 0 1-.853-.315c-1.502-.648-2.482-2.159-2.558-2.26-.074-.1-.61-.812-.61-1.548 0-.737.386-1.099.523-1.249a.552.552 0 0 1 .4-.186c.1 0 .199.001.287.005.092.004.215-.035.336.257.125.3.425 1.036.462 1.111.037.074.062.162.013.262-.05.101-.074.162-.15.25-.074.088-.157.195-.224.263-.075.074-.153.155-.066.305.088.149.388.64.832 1.037.572.51 1.055.667 1.204.743.15.074.237.063.325-.038.087-.101.374-.437.474-.586.1-.15.199-.125.337-.076.137.051.873.412 1.022.487.148.074.249.112.287.175.036.062.036.361-.088.711z">
+              </path>
+              <path
+                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-7.96 14.896h-.002a5.98 5.98 0 0 1-2.862-.729L6 18l.85-3.104a5.991 5.991 0 0 1 5.19-8.983 5.95 5.95 0 0 1 4.238 1.757 5.95 5.95 0 0 1 1.751 4.237 5.998 5.998 0 0 1-5.989 5.989z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="tracking-widest mt-6 md:col-start-1 md:row-start-1">
+          <div class="flex justify-center">
+            <span class="text-xl sm:text-2xl md:text-xl font-medium text-zinc-300">
+              md.
+              <span class="text-3xl sm:text-4xl md:text-3xl font-bold text-zinc-100">shazzad<span
+                  class="text-xl sm:text-2xl md:text-xl font-medium text-zinc-300">ul
+                </span></span>
+              islam
+            </span>
+          </div>
+          <div class="text-xs text-zinc-400 text-center mt-2">
+            &copy;2022. all rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="index.js"></script>
+
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".suggestion", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

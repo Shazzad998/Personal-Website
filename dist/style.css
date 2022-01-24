@@ -1,0 +1,14 @@
+.background {
+  background-image: repeating-linear-gradient(
+      90deg,
+      #343438 0px,
+      #343438 1px,
+      transparent 1px,
+      transparent 25%
+    ),
+    linear-gradient(90deg, #1f1f1f, #1f1f1f);
+}
+
+.swiper-pagination-bullet {
+  background: white;
+}
