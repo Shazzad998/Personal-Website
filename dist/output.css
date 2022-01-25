@@ -741,20 +741,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.scroll-mt-16 {
-  scroll-margin-top: 4rem;
-}
-
-.scroll-mt-40 {
-  scroll-margin-top: 10rem;
-}
-
 .scroll-mt-32 {
   scroll-margin-top: 8rem;
-}
-
-.scroll-pt-8 {
-  scroll-padding-top: 2rem;
 }
 
 .list-disc {
